@@ -2,7 +2,7 @@
   "Wrappers for React.js Hooks"
   (:refer-clojure :exclude [ref])
   #?(:cljs (:require-macros [uix.hooks.alpha :refer [maybe-js-deps with-deps-check]]))
-  #?(:cljs (:require [react :as r]
+  #?(:cljs (:require ["react" :as r]
                      [goog.object :as gobj])))
 
 ;; == State hook ==

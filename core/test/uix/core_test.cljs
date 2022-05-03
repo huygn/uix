@@ -3,7 +3,7 @@
             [uix.core.alpha :as uix.core :refer [html defui defcontext]]
             ;[uix.core.lazy-loader :refer [require-lazy]]
             [uix.lib]
-            [react :as r]
+            ["react" :as r]
             [uix.test-utils :as t]
             [cljs-bean.core :as bean]
             [clojure.string :as str]))

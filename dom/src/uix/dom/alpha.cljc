@@ -1,6 +1,6 @@
 (ns uix.dom.alpha
   "Public API"
-  (:require #?(:cljs [react-dom :as rdom])
+  (:require #?(:cljs ["react-dom" :as rdom])
             [uix.compiler.alpha :as compiler]))
 
 ;; react-dom top-level API

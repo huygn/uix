@@ -2,7 +2,7 @@
   (:require-macros [uix.benchmark :refer [bench]])
   (:require [reagent.core :as r]
             ["react-dom/server" :as rserver]
-            [react :as react]
+            ["react" :as react]
             [uix.compiler.alpha :as uixc]
             [uix.core.alpha :refer [html]]
             [uix.dom.alpha :as uix.dom]

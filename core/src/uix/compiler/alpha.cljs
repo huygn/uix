@@ -1,6 +1,6 @@
 (ns uix.compiler.alpha
   "Hiccup and UIx components interpreter. Based on Reagent."
-  (:require [react :as react]
+  (:require ["react" :as react]
             [goog.object :as gobj]
             [uix.hooks.alpha :as hooks]
             [clojure.string :as str]

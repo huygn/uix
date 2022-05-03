@@ -2,7 +2,7 @@
   "Public API"
   (:refer-clojure :exclude [ref memoize])
   #?(:cljs (:require-macros [uix.core.alpha]))
-  (:require #?(:cljs [react :as r])
+  (:require #?(:cljs ["react" :as r])
             [uix.compiler.alpha :as compiler]
             [uix.compiler.aot :as uixr]
             [uix.lib :refer [doseq-loop]]
@@ -145,7 +145,7 @@
    (memoize f #?(:cljs compiler/*default-compare-args*
                  :clj nil)))
   ([f should-update?]
-   #?(:cljs (react/memo #(compiler/as-element (apply f (next (.-argv %))))
+   #?(:cljs (r/memo #(compiler/as-element (apply f (next (.-argv %))))
                         should-update?)
       :clj f)))
 
@@ -213,7 +213,7 @@
 
 #?(:cljs
    (defn create-context [v]
-     (react/createContext v)))
+     (r/createContext v)))
 
 #?(:clj
    (defmacro defcontext
